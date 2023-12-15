@@ -14,6 +14,6 @@ router.post("/new", register);
 router.post("/login", login);
 router.get("/", isAuthenticated, home);
 router.get("/profile", isAuthenticated, userProfile);
-router.post("/logout", isAuthenticated, logout);
+router.get("/logout", isAuthenticated, logout);
 
 export default router;
